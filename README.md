@@ -9,6 +9,9 @@
 ## Style
 - MUI(Materials, icons, icons-materials, themeProvider)
 
+## Fetch
+- Axios(post, get)
+- Fetch(get)
 
 ## Contacts
 - dmitsag@gmail.com
