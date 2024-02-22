@@ -10,6 +10,6 @@
 - MUI(Materials, icons, icons-materials, themeProvider)
 
 
-## Contatc
+## Contacts
 - dmitsag@gmail.com
 - www.linkedin.com/in/dmitrii-sagayko
