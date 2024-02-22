@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.button {
+  width: 100px;
+  height: 50px;
+}
+
+.input {
+  width: 140px;
+  height: 50px;
+}
+
+form[data-isblack="true"] label {
+  color: rgb(238, 224, 224);
+}
+
+form[data-isblack="true"] div {
+  background-color: rgb(71, 94, 94);
+  color: wheat;
+  border-radius: 4px;
+  
+}
+form[data-isblack="true"] input {
+  border: 3px rgb(71, 94, 94) solid;
+  border-radius: 4px;
+}
+
+.formWrapper {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}

@@ -1,0 +1,57 @@
+.card {
+  height: 420px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  row-gap: 5px;
+  border: 2px black solid;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 5%;
+}
+
+.card[data-color="true"] {
+  border: 2px white solid;
+}
+
+.imgWrapper {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgWrapper > img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h4 {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.cardWrapper > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease; /* добавляем плавную анимацию для свойства transform */
+}
+
+.cardWrapper > a:-webkit-any-link {
+  color: inherit; /* наследуем цвет ссылки от родительского элемента */
+  cursor: inherit; /* наследуем курсор от родительского элемента */
+  text-decoration: none; /* отключаем подчеркивание */
+}
+.cardWrapper> a:hover {
+  transform: scale(1.05); /* увеличиваем размер при наведении */
+}

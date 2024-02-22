@@ -1,0 +1,15 @@
+a{
+  transition: none;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  background-color: rgb(211, 211, 211);
+  z-index: 999;
+}
