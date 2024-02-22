@@ -1,16 +1,14 @@
-import axios from "axios"
+
 import React, { useEffect, useState } from "react"
 import BeerCard from "./bearCard/BeerCard"
-import type BeerType from "./types/BeerType"
+
 import styles from "./BeerPage.module.css"
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import { getBeer } from "./types/beerAction"
 
+
 function BeerPage() {
-  
-  const {beer} = useAppSelector(
-    (state) => state.beer
-  )
+  const { beer } = useAppSelector(state => state.beer)
   const dispatch = useAppDispatch()
 
   useEffect(() => {

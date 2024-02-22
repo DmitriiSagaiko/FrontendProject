@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react"
 import styles from "./BeerCard.module.css"
 import { Link, Navigate } from "react-router-dom"
-import { useMediaQuery, useTheme } from "@mui/material"
-import useLocalStorage from "../../../app/useLS"
+
 import { useAppSelector } from "../../../app/hooks"
 interface Props {
   title: string

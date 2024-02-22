@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     open: true,
   },
+  base: "/FrontendProject/",
   test: {
     globals: true,
     environment: "jsdom",

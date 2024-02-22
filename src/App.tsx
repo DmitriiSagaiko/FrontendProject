@@ -5,12 +5,13 @@ import ErrorPage from "./features/error/ErrorPage"
 import Login from "./features/auth/login/Login"
 import { Suspense, lazy } from "react"
 
-import CircularProgress from "@mui/material/CircularProgress"
+
 import ProtectedRoute from "./features/protectedRoute/ProtectedRoute"
+import Loader from "./features/loader/Loader"
 import HomePage from "./features/homepage/HomePage"
 
 const BeerPage = lazy(() => import("./features/beerPage/BeerPage"))
-// const HomePage = lazy(() => import("./features/homepage/HomePage"))
+
 const BigBeerCard = lazy(
   () => import("./features/beerPage/bigBeerCard/BigBeerCard"),
 )
@@ -19,25 +20,14 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route
-          index
-          element={
-            <ProtectedRoute
-              outlet={
-                <Suspense fallback={<CircularProgress />}>
-                  <HomePage />
-                </Suspense>
-              }
-            />
-          }
-        />
+        <Route index element={<HomePage />} />
 
         <Route
           path="beer"
           element={
             <ProtectedRoute
               outlet={
-                <Suspense fallback={<CircularProgress />}>
+                <Suspense fallback={<Loader />}>
                   <BeerPage />
                 </Suspense>
               }
@@ -50,7 +40,7 @@ const App = () => {
           element={
             <ProtectedRoute
               outlet={
-                <Suspense fallback={<CircularProgress />}>
+                <Suspense fallback={<Loader />}>
                   <BigBeerCard />
                 </Suspense>
               }

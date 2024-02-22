@@ -1,4 +1,4 @@
-import type { PaletteMode } from "@mui/material"
+
 import { Button, CssBaseline, ThemeProvider, createTheme } from "@mui/material"
 import React, { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
@@ -72,6 +72,7 @@ function Header() {
             <NavLink to={"login"} onClick={handleLogout}>
               <LogoutIcon fontSize="large" />
             </NavLink>
+            
           </>
         ) : (
           <>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { useAppSelector } from "../../../app/hooks"
 import { Link, useParams } from "react-router-dom"
 import styles from "./BigBeerCard.module.css"
 import type BeerType from "../types/BeerType"

@@ -25,16 +25,12 @@ function Login() {
   }, [counter])
 
   const login = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault() // Предотвращаем стандартное поведение формы
+    event.preventDefault() 
     const userData: ICredentials = { username, password }
     dispatch(authLogin(userData))
-    // setTimeout(() => {
-    //   navigate("/")
-    // }, 1000)
-    console.log("before navigate")
-    navigate("/")
-    console.log("after navigate")
+    navigate("../")
   }
+
   return (
     <div key={counter}>
       <h4> username: 'kminchelle', password: '0lelplR',</h4>

@@ -7,11 +7,10 @@ interface IProps {
   outlet: JSX.Element
 }
 const ProtectedRoute: FC<IProps> = ({ outlet }) => {
-  const { user } = useAppSelector((state) => state.auth)
-  if (user) {
+  const token = localStorage.getItem("token")
+  if (token) {
     return outlet
   }
-
   return <Navigate to="../login" />
 }
 
