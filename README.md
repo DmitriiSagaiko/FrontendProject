@@ -1,7 +1,7 @@
-# React
--hooks (useState, useSelector, useEffect)
--redux toolkit (slices, async/synch requests, useAppSelector, useAppDispatch, useLocalStorage)
--router-dom (useNavigate, Routes, Route, NavLink)
+## React
+- hooks (useState, useSelector, useEffect)
+- redux toolkit (slices, async/synch requests, useAppSelector, useAppDispatch, useLocalStorage)
+- router-dom (useNavigate, Routes, Route, NavLink)
 
 ## CSS
 - CSS modules for every component
